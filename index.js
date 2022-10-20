@@ -29,7 +29,7 @@ client.on('ready', () => {
     });
 
     console.log("hour",moment().hour())
-    client.sendMessage("120363046118887313@g.us", `ສະບາຍດີ  ${LaoWeekDay(moment(d).format('dddd'))}`);
+    client.sendMessage("120363046118887313@g.us", `ສະບາຍດີ  ${LaoWeekDays(moment(d).format('dddd'))}`);
 });
 
 
