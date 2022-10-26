@@ -1,5 +1,4 @@
-function LaoWeekDays(dayEN) {
-    if(!dayEN) return 0
+const LaoWeekDays = (dayEN) => {
     let _dayLO = ""
     switch(dayEN){
         case "Monday":
@@ -24,13 +23,10 @@ function LaoWeekDays(dayEN) {
             _dayLO = "ອາທິດ"
             break;
     }
-
     return _dayLO
 }
 
-function FormatPeriod(time){
-    if(!time) return 0
-
+const FormatPeriod = (time) => {
     let _period = ""
     if(time <= 11){
         _period = "ຕອນເຊົ້າ"
@@ -51,3 +47,5 @@ function FormatPeriod(time){
     return _period
 }
 
+
+module.exports = {LaoWeekDays, FormatPeriod}
